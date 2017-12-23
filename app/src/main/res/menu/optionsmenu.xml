@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Single menu item
+         Set id, icon and Title for each menu item
+    -->
+    <item android:id="@+id/paylas"
+        android:title="Paylaş" />
+
+    <item android:id="@+id/oyver"
+        android:title="Oy Ver" />
+
+    <item android:id="@+id/hakkinda"
+        android:title="Hakkında" />
+</menu>

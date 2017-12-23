@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simgesen.telrehberapp.MainActivity">
+   <LinearLayout
+       android:background="@drawable/backgraund"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </LinearLayout>
+
+   <android.support.design.widget.NavigationView
+       app:headerLayout="@layout/header"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:background="@color/white"
+       app:itemTextColor="@color/darkgray"
+       app:itemIconTint="@color/darkgray"
+       app:menu="@menu/drawermenu"
+       android:layout_gravity= "start">
+
+   </android.support.design.widget.NavigationView>
+   <RelativeLayout
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context="com.example.simgesen.telrehberuygulamasi.MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:id="@+id/textView"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:text="İsim ve Soyisim Girin" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:text="Telefon Numarası Girin"
+       android:id="@+id/textView2"
+       android:layout_below="@+id/eIsim"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:inputType="textPersonName"
+       android:hint="İsim ve Soyisim Giriniz..."
+       android:ems="10"
+       android:id="@+id/eIsim"
+       android:layout_below="@+id/textView"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true" />
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:inputType="phone"
+       android:ems="10"
+       android:id="@+id/eTelefon"
+       android:layout_below="@+id/textView2"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:hint="Telefon Numarası Giriniz.." />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Kişi Ekle"
+       android:id="@+id/bEkle"
+       android:layout_below="@+id/eTelefon"
+       android:layout_alignRight="@+id/bGetir"
+       android:layout_alignEnd="@+id/bGetir"
+       android:layout_alignLeft="@+id/bGetir"
+       android:layout_alignStart="@+id/bGetir" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Kişileri Getir"
+       android:id="@+id/bGetir"
+       android:layout_below="@+id/bEkle"
+       android:layout_centerHorizontal="true" />
+
+      <Button
+          android:id="@+id/aramabtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/bGetir"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="18dp"
+          android:text="Numara Ara" />
+
+
+   </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
